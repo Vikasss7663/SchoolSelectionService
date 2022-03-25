@@ -1,7 +1,6 @@
 server:
   port: '9091'
 
-
 spring:
   profiles:
     active: local
@@ -17,3 +16,14 @@ spring:
           auto: update
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
+logging:
+  level:
+    root: DEBUG
+    com:
+      schoool:
+        management: DEBUG
+
+kafka:
+  consumer:
+    bootstrap-servers: 'http://127.0.0.1:9092'
+    group-id: 'school-service'
