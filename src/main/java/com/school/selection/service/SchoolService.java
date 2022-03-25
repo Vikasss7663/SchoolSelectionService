@@ -1,9 +1,8 @@
-package com.student.selection.service;
+package com.school.selection.service;
 
-import com.student.selection.model.School;
-import com.student.selection.repository.SchoolRepository;
+import com.school.selection.model.School;
+import com.school.selection.repository.SchoolRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.student.selection.repository;
+package com.school.selection.repository;
 
-import com.student.selection.model.School;
+import com.school.selection.model.School;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SchoolRepository extends JpaRepository<School, Integer> {

@@ -1,7 +1,7 @@
-package com.student.selection.controller;
+package com.school.selection.controller;
 
-import com.student.selection.model.School;
-import com.student.selection.service.SchoolService;
+import com.school.selection.model.School;
+import com.school.selection.service.SchoolService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

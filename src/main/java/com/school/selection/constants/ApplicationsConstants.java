@@ -1,4 +1,4 @@
-package com.student.selection.constants;
+package com.school.selection.constants;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

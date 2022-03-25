@@ -1,4 +1,4 @@
-package com.student.selection.model;
+package com.school.selection.model;
 
 import lombok.Data;
 
