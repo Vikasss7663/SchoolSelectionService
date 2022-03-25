@@ -1,22 +1,42 @@
 package com.student.selection.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Arrays;
+import com.student.selection.model.School;
+import com.student.selection.service.SchoolService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-import static com.student.selection.constants.ApplicationsConstants.SCHOOL_NAME_1;
-import static com.student.selection.constants.ApplicationsConstants.SCHOOL_NAME_2;
 
 @RestController
 @RequestMapping("/school")
+@RequiredArgsConstructor
 public class SchoolController {
 
+    private final SchoolService schoolService;
+
     @GetMapping
-    public List<String> getSchools() {
-        return Arrays.asList(SCHOOL_NAME_1, SCHOOL_NAME_2);
+    public List<School> getSchools() {
+        return schoolService.getSchools();
+    }
+
+    @GetMapping(value = "{id}")
+    public School getSchool(@PathVariable int id) {
+        return schoolService.getSchool(id);
+    }
+
+    @PostMapping
+    public void addSchool(@RequestBody School school) {
+        schoolService.addSchool(school);
+    }
+
+    @PutMapping
+    public void updateSchool(@RequestBody School school) {
+        schoolService.addSchool(school);
+    }
+
+    @DeleteMapping(value = "{id}")
+    public void deleteSchool(@PathVariable int id) {
+        schoolService.deleteSchool(id);
     }
 
 }
