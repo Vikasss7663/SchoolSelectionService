@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class KafkaConsumerProperties {
 
     private String bootstrapServers;
+    private String schemaRegistryUrl;
     private String groupId;
 
 }

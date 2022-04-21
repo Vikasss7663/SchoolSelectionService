@@ -6,9 +6,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ApplicationsConstants {
 
-    public static final String SPRING_PROFILE_PRODUCTION = "prod";
-    public static final String SCHOOL_NAME_1 = "Jhunjhunu Academy, JJN";
-    public static final String SCHOOL_NAME_2 = "Akash Public School, JJN";
     public static final String TOPIC_NAME = "Kafka-Example";
+    public static final String SCHEMA_REGISTRY_URL = "schema.registry.url";
+    public static final String BOOTSTRAP_SERVER = "http://0.0.0.0:9092";
+    public static final String GROUP_ID = "school-service";
+    public static final String SCHEMA_REGISTRY_URL_VAL = "http://0.0.0.0:8081";
 
 }

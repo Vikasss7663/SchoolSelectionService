@@ -8,7 +8,21 @@ logging:
       schoool:
         management: DEBUG
 
+spring:
+  datasource:
+    url: 'jdbc:mysql://localhost:3307/school?allowPublicKeyRetrieval=true&useSSL=false'
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
 kafka:
   consumer:
-    bootstrap-servers: 'http://127.0.0.1:9092'
-    group-id: 'school-service'
+    bootstrap-servers: 'http://0.0.0.0:9092'
+    schema-registry-url: 'http://0.0.0.0:8081'
+    group-id: 'school-service-1'
